@@ -3,20 +3,21 @@
 /**
  * main - Entry point
  *
- * Return: always (0) success
+ * Return: always 0 (success)
  */
 
 int main(void)
 {
-	int i = 0;
-	
-	while (i <= 9)
+	int i;
+
+	i = 0;
+	while (i < 10)
 	{
 		putchar('0' + i);
 		if (i != 9)
 		{
 			putchar(',');
-			putchar(' ');
+			putchat(' ');
 		}
 		i++;
 	}
