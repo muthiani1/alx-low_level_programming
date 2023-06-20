@@ -8,33 +8,26 @@
 
 int main(void)
 {
-	int i, j, k, l;
+	int i, j;
 
 	i = 0;
-	while (i < 10)
+	while (i < 100)
 	{
 		j = 0;
-		while (j < 10)
+		while (j < 100)
 		{
-			k = 0;
-			while (k < 10)
+			if (i < j)
 			{
-				l = 1;
-				while (l < 10)
+				putchar('0' + i / 10);
+				putchar('0' + i % 10);
+				putchar(' ');
+				putchar('0' + j / 10);
+				putchar('0' + j % 10);
+				if (i + j != 197)
 				{
-					if (i + j < k + l)
-					{
-						putchar('0' + i);
-						putchar('0' + j);
-						putchar(' ');
-						putchar('0' + k);
-						putchar('0' + l);
-						putchar(',');
-						putchar(' ');
-					}
-					l++;
+					putchar(',');
+					putchar(' ');
 				}
-				k++;
 			}
 			j++;
 		}
