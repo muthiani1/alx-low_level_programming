@@ -8,10 +8,12 @@
 
 int main(void)
 {
-	int i = 0;
+	int i, j;
 
+	i = 0;
 	while (i < 10)
 	{
+		j = 0;
 		while (j < 10)
 		{
 			if (i != j && i < j)
@@ -23,8 +25,8 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
-			j++;
 			}
+			j++;
 		}
 	i++;
 	}
