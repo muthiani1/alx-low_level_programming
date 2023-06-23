@@ -9,25 +9,23 @@
 
 int main(void)
 {
-        unsigned long int i, j, k;
-	
+	unsigned long int i, i1, i2, j, j1, j2, k;
+
 	i = 1;
 	j = 2;
 	k = 3;
 	printf("1");
 	while (k < 92)
 	{
-		printf(", %lu",j);
+		printf(", %lu", j);
 		j = j + i;
 		i = j - i;
 		k++;
 	}
-
 	i1 = i / 10000000000;
 	i2 = i % 10000000000;
 	j1 = j / 10000000000;
 	j2 = j % 10000000000;
-
 	while (k > 91 && k < 100)
 	{
 		printf(", %lu%lu", (j1 + j2 / 10000000000), j2 % 10000000000);
