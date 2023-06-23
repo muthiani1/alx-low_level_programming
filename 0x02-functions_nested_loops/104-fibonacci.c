@@ -9,7 +9,7 @@
 
 int main(void)
 {
-        long int i, j, k, l;
+        unsigned long int i, j, k, l;
 	
 	i = 1;
 	j = 2;
@@ -21,10 +21,10 @@ int main(void)
 		i = j;
 		j = k;
 		k = i + j;
-		printf("%ld, ",k);
+		printf("%lu, ",k);
 		l++;
 	}
-	printf("%ld\n", k);
+	printf("%lu\n", k);
 
 	return (0);
 }
