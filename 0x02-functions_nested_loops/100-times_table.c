@@ -16,7 +16,10 @@ void print_times_table(int n)
 		i = 0;
 		while (i < n + 1)
 		{
-			j = 0;
+			_putchar('0');
+			_putchar(',');
+			_putchar(' ');
+			j = 1;
 			while (j < n + 1)
 			{
 				if (i * j / 100)

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - prints the first 98 Fibonacci numbers
@@ -16,7 +17,13 @@ int main(void)
          k = i + j;
          l = 3;
 
-         while (l < 97)
+         putchar('1');
+         putchar(',');
+         putchar(' ');
+         putchar('2');
+         putchar(',');
+         putchar(' ');
+	 while (l < 97)
          {
                  printLong(k);
 		 putchar(',');
