@@ -9,7 +9,8 @@
 
 void print_number(int n)
 {
-	int i = 1;
+	unsigned int n1;
+	unsigned int i = 1;
 	int j = 0;
 
 	if (n < 0)
@@ -17,11 +18,12 @@ void print_number(int n)
 		_putchar('-');
 		n *= -1;
 	}
-	if (n == 0)
+	n1 = n;
+	if (n1 == 0)
 	{
 		_putchar('0');
 	}
-	while (n / i)
+	while (n1 / i)
 	{
 		i *= 10;
 		j++;
@@ -29,8 +31,8 @@ void print_number(int n)
 	while (j > 0)
 	{
 		i /= 10;
-		_putchar('0' + n / i);
-		n = n % i;
+		_putchar('0' + n1 / i);
+		n1 = n1 % i;
 		j--;
 	}
 }
