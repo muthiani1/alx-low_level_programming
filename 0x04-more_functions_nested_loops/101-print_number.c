@@ -10,29 +10,20 @@
 void print_number(int n)
 {
 	unsigned int n1;
-	unsigned int i = 1;
-	int j = 0;
 
 	if (n < 0)
 	{
 		_putchar('-');
-		n *= -1;
+		n1 = -n;
 	}
-	n1 = n;
-	if (n1 == 0)
+	else
 	{
-		_putchar('0');
+		n1 = n;
 	}
-	while (n1 / i)
+	if (n1 / 10)
 	{
-		i *= 10;
-		j++;
+		print_number(n1 / 10);
 	}
-	while (j > 0)
-	{
-		i /= 10;
-		_putchar('0' + n1 / i);
-		n1 = n1 % i;
-		j--;
-	}
+
+	_putchar((n1 % 10) + '0');
 }
