@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - prints numbers 1 to 100. For multiples of 3, prints fizz, for multiples of
- * 5, prints Buzz, anf FizzBuzz for multiples of both.
+ * main - prints numbers 1 to 100. For multiples of 3, prints fizz, for
+ * multiple of 5, prints Buzz, anf FizzBuzz for multiples of both.
  *
  * Return: always 0
  */
